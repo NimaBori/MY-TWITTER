@@ -1,0 +1,371 @@
+/* section {
+  position: absolute;
+  top: 5px;
+  right: 780px;
+  left: 600px;
+} */
+
+.header-container {
+display: flex;
+width: 568px;
+height: 53px;
+align-items: center;
+justify-content: space-between;
+padding: 0 16px;
+background-color: rgba(255, 255, 255, 0.8);
+backdrop-filter: blur(5px);
+position: fixed;
+top: 0;
+
+}
+
+.upper-main-contant {
+  width: 598px;
+  border: 1px solid rgb(239, 239, 239);  
+}
+
+.upper-main-second-row {
+  display: flex;
+  width: 598px;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 15px; 
+  margin-top: 58px; 
+  padding: 0 16px;
+}
+
+.upper-main-third-row {
+  margin-left: 60px;
+  width: 514px;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tweets-column-main-contant {
+  width: 598px;  
+  border: 1px solid rgb(239, 239, 239);
+}
+
+.tweets-column-main-contant .tweet-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 15px 11px 0 14px;
+  border-bottom: 1px solid rgb(239, 239, 239);;
+}
+
+.tweets-column-main-contant .tweet-container:hover {
+  cursor: pointer;
+  background-color: rgb(241, 241, 241);
+}
+
+.tweet-container .first-column {
+  margin-right: 10px;
+}
+
+.tweet-container .second-column {
+width: 506px;
+}
+
+
+.second-column .first-row {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.header-container .home {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-container img {
+  width: 10px;
+  height: 15px;
+  object-fit: cover;
+}
+
+.upper-main-second-row img,
+.tweet-profile-picture {
+  width: 45px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 24px;    
+}
+
+.upper-main-second-row .wrapper {
+  width: 45px;
+  height: 48px;
+  border-radius: 24px;
+  transition: filter 0.15s;
+}
+
+.upper-main-second-row .wrapper:hover {
+  cursor: pointer;
+  filter: brightness(90%); 
+}
+
+.upper-main-second-row input {
+  border: none;
+  width: 501px;
+  height: 28px;
+  margin-left: 10px;
+}
+
+.upper-main-second-row input::placeholder {
+  font-size: 20px;  
+  color: rgb(83, 100, 113);  
+}
+
+.upper-main-third-row-images img {
+  width: 16px;  
+  object-fit: contain;   
+  align-items: center;   
+}
+
+/* .upper-main-third-row-images img:hover {
+background-color: rgb(229, 245, 251);
+} */
+
+.upper-main-third-row-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  
+}
+
+.media-icon-container,
+.GIF-icon-container,
+.poll-icon-container,
+.emoji-icon-container,
+.schedule-icon-container,
+.location-icon-container
+ {
+  position: relative; 
+  border-radius: 18px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s;
+}
+
+.media-icon-container:hover,
+.GIF-icon-container:hover,
+.poll-icon-container:hover,
+.emoji-icon-container:hover,
+.schedule-icon-container:hover,
+.location-icon-container:hover
+ {
+  background-color: rgb(229, 245, 251);
+  cursor: pointer;
+}
+
+.media-icon-container .tooltip,
+.GIF-icon-container .tooltip,
+.poll-icon-container .tooltip,
+.emoji-icon-container .tooltip,
+.schedule-icon-container .tooltip,
+.location-icon-container .tooltip {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 10px;
+  bottom: -20px;
+  pointer-events: none;
+  transition: opacity 0;
+  transition-delay: 0.7s;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.media-icon-container:hover .tooltip,
+.GIF-icon-container:hover .tooltip,
+.poll-icon-container:hover .tooltip,
+.emoji-icon-container:hover .tooltip,
+.schedule-icon-container:hover .tooltip,
+.location-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+.upper-main-third-row button {
+  background-color: rgb(29, 155, 240, 0.5);
+  color: white;
+  width: 74px;
+  height: 34px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 17px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.below-upper-main-contant div {
+  color: rgb(29, 155, 240);
+  font-size: 15px;
+  padding: 15px 0 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+}
+
+.below-upper-main-contant {
+  width: 598px;  
+  border-right: 1px solid rgb(239, 239, 239);
+  border-left: 1px solid rgb(239, 239, 239);
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s;
+}
+
+.below-upper-main-contant:hover {
+  cursor: pointer;
+  background-color: rgb(241, 241, 241);
+}
+
+.first-row .profile-name {
+  font-size: 15px;
+  font-weight: bold;  
+}
+
+.first-row .tweet-details {
+  color: rgb(83, 100, 113);
+  font-weight: 300;
+}
+
+.first-row .more {
+  width: 15px; 
+  opacity: 0.6;
+  padding: 7px 8px;  
+  border-radius: 15px;
+  transition: background-color 0.15s;
+}
+
+/* .first-row .more-container {  
+  padding: -6px 1px 2px 1px;
+  border-radius: 20px;
+} */
+
+.first-row .more:hover {
+  background-color: rgb(195, 236, 251);
+}
+
+.second-column .second-row {
+  margin-bottom: 12px;
+}
+
+.pic-row img {
+  width: 360px;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.second-column .actions-row {
+  width: 425px; 
+  margin: 10px 0 13px 0; 
+}
+
+.actions-row img {
+  width: 15px;
+  height: 15px;  
+  object-fit: cover;
+  opacity: 0.45;
+  padding: 10px;  
+  border-radius: 20px;
+  transition: background-color 0.15s;
+}
+
+/* color of img:hover is inhirited */
+.reply-container img:hover,
+
+.like-container img:hover,
+.share-container img:hover,
+.share-2-container img:hover {  
+  background-color: rgba(0, 0, 0, 0.3);  
+}
+
+.actions-row .reply .reply-container,
+.actions-row .share .share-container,
+.actions-row .like .like-container,
+.actions-row .share-2 .share-2-container {  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  transition: filter 0.15s;  
+}
+
+.reply .reply-container:hover,
+.share-2 .share-2-container:hover {
+  filter: invert(63%) sepia(79%) saturate(5369%) hue-rotate(163deg) brightness(97%) contrast(104%);    
+}
+
+.share .share-container:hover {
+  filter: invert(73%) sepia(7%) saturate(4217%) hue-rotate(106deg) brightness(95%) contrast(85%);
+}
+
+.like .like-container:hover {
+  filter: invert(18%) sepia(65%) saturate(7470%) hue-rotate(298deg) brightness(122%) contrast(118%);
+}
+
+.actions-row .reply,
+.actions-row .share,
+.actions-row .like,
+.actions-row .share-2 {
+  position: relative;
+}
+
+.reply .tooltip,
+.share .tooltip,
+.like .tooltip,
+.share-2 .tooltip {  
+  position: absolute;
+  background-color: grey;
+  color: white;
+  text-align: center;  
+  border-radius: 3px;
+  padding: 3px 3px 5px 3px;
+  font-size: 11px;
+  left: 2px;
+  bottom: -24px;
+  pointer-events: none;
+  transition: opacity 0;
+  transition-delay: 0.7s;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.reply:hover .tooltip,
+.like:hover .tooltip,
+.share:hover .tooltip,
+.share-2:hover .tooltip {  
+  opacity: 1;
+}
+
+.reply .counter,
+.share .counter,
+.like .counter {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  margin-left: 3px;
+}

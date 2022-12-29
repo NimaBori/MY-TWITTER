@@ -1,0 +1,115 @@
+/* .left-sidebar {
+  height: 566px;  
+  position: fixed;
+  top: 0;
+  bottom: 0; 
+  left: 319px;  
+  right: 1309px;  
+} */
+
+
+.sidebar-twitter-link img {  
+  width: 25px;
+  height: 25px;
+  object-fit: cover; 
+  margin-left: 5px;   
+}
+
+.left-sidebar .sidebar-twitter-link {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  padding: 10px;  
+  border-radius: 25px;
+  transition: background-color 0.15s;  
+}
+
+.sidebar-twitter-link:hover {
+  cursor: pointer;
+  background-color: rgba(207, 237, 246, 0.623);  
+}
+
+.sidebar-link img {  
+  width: 20px;
+  height: 20px;
+  object-fit: contain; 
+  margin-right: 25px;
+}
+
+.sidebar-link div {
+  font-size: 20px;
+}
+
+.sidebar-link {  
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  padding: 10px 28px 10px 12px;  
+  border-radius: 20px;
+  transition: background-color 0.15s;
+}
+
+.sidebar-link:hover {
+  cursor: pointer;
+  background-color: rgb(235, 235, 235);  
+}
+
+.left-sidebar button {  
+  background-color: rgb(29, 155, 240);
+  color: white;
+  width: 211px;
+  height: 50px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tweet-round-icon img{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 40px;
+  margin: 5px;
+  transition: box-shadow 0.15s;
+}
+
+.tweet-round-icon img:hover {
+  cursor: pointer;
+  box-shadow: -1px -2px 7px rgb(29, 155, 240);
+}
+
+@media (min-width: 1300px) {
+  .tweet-round-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .text-sidebar-link, .btn-sidebar-link
+  {
+    display: none;
+  }  
+  .sidebar-link img {
+    margin-right: 12px;
+  }
+  .left-sidebar .sidebar-link {    
+    justify-content:left;
+    padding-right: 0;     
+    margin: 5px;    
+  }
+}
+
+/* @media (max-width: 1300px) {
+  .left-sidebar .sidebar-link {
+    padding-right: 0;
+    margin: 5px;    
+  }
+  
+} */
+
